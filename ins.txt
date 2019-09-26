@@ -1,0 +1,29 @@
+git remote add origin https://github.com/LaghPaul/Clase-26-09-2019-Act2-.git
+1. Crear segunda clase 
+nombre: TestJUnit002
+
+2. Crear package 
+nombre: modelo
+
+3. Crear clase Libro en modelo
+variables String: codigo, titulo, autor
+generar constructores, getters and setters
+
+4.  en modelos crear segunda clase
+nombre: ColeccionLibros
+atributo ArrayList<Libro>: libros
+
+Clase:
+package modelos;
+import java.util.ArrayList;
+public class ColeccionLibros {
+    private ArrayList<Libro> libros;
+  
+    public ColeccionLibros(){
+        this.libros = new ArrayList<Libro>();
+    }
+    public boolean Agregar(Libro libro){
+        return this.libros.add(libro);
+    }
+}
+ 
